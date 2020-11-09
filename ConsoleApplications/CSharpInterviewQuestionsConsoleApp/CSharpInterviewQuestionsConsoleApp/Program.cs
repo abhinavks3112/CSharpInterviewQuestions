@@ -10,10 +10,16 @@ namespace CSharpInterviewQuestionsConsoleApp
     {
         static void Main(string[] args)
         {
-            // Storing different data types in 1. Object array 2. Arraylist
+            // Storing different data types in 1. Object array 2. ArrayList
             StoringDifferentDataTypesInArray typesInArray = new StoringDifferentDataTypesInArray();
             typesInArray.CreateObjectArray();
             typesInArray.CreateArrayList();
+
+            Console.WriteLine();
+
+            // Jagged Array
+            JaggedArray jagged = new JaggedArray();
+            jagged.CreateJaggedArray();
         }
     }
 }
