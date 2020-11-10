@@ -49,10 +49,15 @@
     <Compile Include="JaggedArray.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recursion_Concept\Factorial.cs" />
+    <Compile Include="Recursion_Concept\FindAllFilesInFolderAndSubFolder.cs" />
     <Compile Include="StoringDifferentDataTypesInArray.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Recursion_Concept\Sample\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

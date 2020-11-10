@@ -1,7 +1,10 @@
 ﻿using CSharpInterviewQuestionsConsoleApp.Abstract_Class_Concept;
+using CSharpInterviewQuestionsConsoleApp.Recursion_Concept;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Runtime.Remoting.Channels;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -53,6 +56,24 @@ namespace CSharpInterviewQuestionsConsoleApp
             Console.WriteLine("Monthly Salary: " + contractEmployee.GetMonthlySalary());
 
             Console.WriteLine("----------------------");
+            
+            // Factorial
+            Console.WriteLine("Enter number for calculating its factorial");
+            int number = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine();
+            Factorial factorial = new Factorial();
+            Console.WriteLine("\nFactorial of " + number + " is: " + factorial.Calculate(number)); 
+            Console.WriteLine();
+            Console.WriteLine("\nFactorial of " + number + " by recursion is: " + factorial.CalculateByRecursion(number));
+
+            Console.WriteLine();
+
+            // Get All Files in Folder and SubFolder by Recursion
+            var enviroment = System.Environment.CurrentDirectory;
+            string projectDirectory = Directory.GetParent(enviroment).Parent.FullName;
+            FindAllFilesInFolderAndSubFolder findAllFiles = new FindAllFilesInFolderAndSubFolder();
+            findAllFiles.GetAllFilesInDirectories(projectDirectory + "/Recursion_Concept/Sample");
+            Console.WriteLine();
         }
     }
 }
