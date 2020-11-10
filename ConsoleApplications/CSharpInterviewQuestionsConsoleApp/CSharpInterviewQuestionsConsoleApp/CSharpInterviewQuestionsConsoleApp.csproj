@@ -43,6 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract_Class_Concept\BaseEmployee.cs" />
+    <Compile Include="Abstract_Class_Concept\ContractEmployee.cs" />
+    <Compile Include="Abstract_Class_Concept\FullTimeEmployee.cs" />
     <Compile Include="JaggedArray.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
