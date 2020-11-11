@@ -1,5 +1,6 @@
 ﻿using CSharpInterviewQuestionsConsoleApp.Abstract_Class_Concept;
 using CSharpInterviewQuestionsConsoleApp.Recursion_Concept;
+using CSharpInterviewQuestionsConsoleApp.Reverse_String_Concept;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -58,13 +59,13 @@ namespace CSharpInterviewQuestionsConsoleApp
             Console.WriteLine("----------------------");
             
             // Factorial
-            Console.WriteLine("Enter number for calculating its factorial");
-            int number = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine();
-            Factorial factorial = new Factorial();
-            Console.WriteLine("\nFactorial of " + number + " is: " + factorial.Calculate(number)); 
-            Console.WriteLine();
-            Console.WriteLine("\nFactorial of " + number + " by recursion is: " + factorial.CalculateByRecursion(number));
+            //Console.WriteLine("Enter number for calculating its factorial");
+            //int number = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine();
+            //Factorial factorial = new Factorial();
+            //Console.WriteLine("\nFactorial of " + number + " is: " + factorial.Calculate(number)); 
+            //Console.WriteLine();
+            //Console.WriteLine("\nFactorial of " + number + " by recursion is: " + factorial.CalculateByRecursion(number));
 
             Console.WriteLine();
 
@@ -74,6 +75,11 @@ namespace CSharpInterviewQuestionsConsoleApp
             FindAllFilesInFolderAndSubFolder findAllFiles = new FindAllFilesInFolderAndSubFolder();
             findAllFiles.GetAllFilesInDirectories(projectDirectory + "/Recursion_Concept/Sample");
             Console.WriteLine();
+
+            //Reverse every word in a given string
+            ReverseEveryWordInString reverse = new ReverseEveryWordInString();
+            reverse.ReverseEveryWordWithBuiltInMethod();
+            reverse.ReverseEveryWordWithoutBuiltInMethod();
         }
     }
 }
