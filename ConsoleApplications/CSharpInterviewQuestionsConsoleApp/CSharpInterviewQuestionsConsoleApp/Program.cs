@@ -1,4 +1,5 @@
 ﻿using CSharpInterviewQuestionsConsoleApp.Abstract_Class_Concept;
+using CSharpInterviewQuestionsConsoleApp.InputData;
 using CSharpInterviewQuestionsConsoleApp.Recursion_Concept;
 using CSharpInterviewQuestionsConsoleApp.Reverse_String_Concept;
 using System;
@@ -15,6 +16,9 @@ namespace CSharpInterviewQuestionsConsoleApp
     {
         static void Main(string[] args)
         {
+            Input input = new Input();
+            /*
+            // Comment out when you want to test the output of any concept
             // Storing different data types in 1. Object array 2. ArrayList
             StoringDifferentDataTypesInArray typesInArray = new StoringDifferentDataTypesInArray();
             typesInArray.CreateObjectArray();
@@ -80,6 +84,14 @@ namespace CSharpInterviewQuestionsConsoleApp
             ReverseEveryWordInString reverse = new ReverseEveryWordInString();
             reverse.ReverseEveryWordWithBuiltInMethod();
             reverse.ReverseEveryWordWithoutBuiltInMethod();
+            */
+
+            Two_Pointer_Problem.TwoSum twoSum = new Two_Pointer_Problem.TwoSum();
+            Dictionary<int, int> dictionaries = twoSum.FindIndicesAndElements(input.unSortedFixedArray, input.unSortedFixedArrayTwoNumberSum);
+
+            Two_Pointer_Problem.TwoSumSortedArray sortedArray = new Two_Pointer_Problem.TwoSumSortedArray();
+            Dictionary<int, int> dictionaries1 = twoSum.FindIndicesAndElements(input.sortedFixedArray, input.sortedFixedArrayTwoNumberSum);
+            
         }
     }
 }

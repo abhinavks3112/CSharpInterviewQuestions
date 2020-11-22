@@ -46,6 +46,7 @@
     <Compile Include="Abstract_Class_Concept\BaseEmployee.cs" />
     <Compile Include="Abstract_Class_Concept\ContractEmployee.cs" />
     <Compile Include="Abstract_Class_Concept\FullTimeEmployee.cs" />
+    <Compile Include="InputData\Input.cs" />
     <Compile Include="JaggedArray.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -53,6 +54,8 @@
     <Compile Include="Recursion_Concept\FindAllFilesInFolderAndSubFolder.cs" />
     <Compile Include="Reverse_String_Concept\ReverseEveryWordInString.cs" />
     <Compile Include="StoringDifferentDataTypesInArray.cs" />
+    <Compile Include="Two_Pointer_Problem\TwoSum.cs" />
+    <Compile Include="Two_Pointer_Problem\TwoSumSortedArray.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
