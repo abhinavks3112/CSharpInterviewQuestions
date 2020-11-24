@@ -81,6 +81,28 @@ namespace CSharpInterviewQuestionsConsoleApp.Reverse_String_Concept
             return new String(letterInWordsReverse);
         }
 
+        public string RevereseSingleWordUsingTwoPointer(string word)
+        {
+            char[] letterInWords = word.ToCharArray();
+
+            int startIndex = 0;
+            int lastIndex = word.Length - 1;
+            char temp;
+
+            while(startIndex <= lastIndex)
+            {
+                // Swap letters in pair of beginning and end till we reach the middle
+                // Decrease the number of operations in half compared to ReverseSingleWord
+                // Complexity is O(n) same as ReverseSingleWord
+                temp = letterInWords[startIndex];
+                letterInWords[startIndex] = letterInWords[lastIndex];
+                letterInWords[lastIndex] = temp;
+                startIndex++;
+                lastIndex--;
+            }
+
+            return new String(letterInWords);
+        }
         public List<string> SplitStringIntoIndividualWords(string s, char separator)
         {
             StringBuilder temp = new StringBuilder();
