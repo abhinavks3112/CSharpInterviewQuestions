@@ -53,6 +53,7 @@
     <Compile Include="Recursion_Concept\Factorial.cs" />
     <Compile Include="Recursion_Concept\FindAllFilesInFolderAndSubFolder.cs" />
     <Compile Include="Reverse_String_Concept\ReverseEveryWordInString.cs" />
+    <Compile Include="Find_All_Substrings\FindAllSubstringsWithGivenCharacters.cs" />
     <Compile Include="StoringDifferentDataTypesInArray.cs" />
     <Compile Include="Two_Pointer_Problem\TwoSum.cs" />
     <Compile Include="Two_Pointer_Problem\TwoSumSortedArray.cs" />

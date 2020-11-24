@@ -83,15 +83,17 @@ namespace CSharpInterviewQuestionsConsoleApp
             //Reverse every word in a given string
             ReverseEveryWordInString reverse = new ReverseEveryWordInString();
             reverse.ReverseEveryWordWithBuiltInMethod();
-            reverse.ReverseEveryWordWithoutBuiltInMethod();
-            */
+            reverse.ReverseEveryWordWithoutBuiltInMethod();            
 
             Two_Pointer_Problem.TwoSum twoSum = new Two_Pointer_Problem.TwoSum();
             Dictionary<int, int> dictionaries = twoSum.FindIndicesAndElements(input.unSortedFixedArray, input.unSortedFixedArrayTwoNumberSum);
 
             Two_Pointer_Problem.TwoSumSortedArray sortedArray = new Two_Pointer_Problem.TwoSumSortedArray();
             Dictionary<int, int> dictionaries1 = twoSum.FindIndicesAndElements(input.sortedFixedArray, input.sortedFixedArrayTwoNumberSum);
-            
+            */
+
+            Find_All_Substrings.FindAllSubstringsWithGivenCharacters findAll = new Find_All_Substrings.FindAllSubstringsWithGivenCharacters();
+            findAll.FindingThroughBruteSearch(input.randomString, input.randomSubString);
         }
     }
 }

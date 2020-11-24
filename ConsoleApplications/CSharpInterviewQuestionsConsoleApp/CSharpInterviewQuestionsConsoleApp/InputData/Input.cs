@@ -14,6 +14,9 @@ namespace CSharpInterviewQuestionsConsoleApp.InputData
 
         public int[] sortedFixedArray = new int[10] { 0, 4, 13, 15, 22, 48, 50, 73, 86, 100 };
         public int sortedFixedArrayTwoNumberSum = 65;
+
+        public string randomString = "HGFDSAXZBJKC";
+        public string randomSubString = "ABKC";
         public Input()
         {
 
