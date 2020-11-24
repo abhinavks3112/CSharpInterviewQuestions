@@ -90,10 +90,13 @@ namespace CSharpInterviewQuestionsConsoleApp
 
             Two_Pointer_Problem.TwoSumSortedArray sortedArray = new Two_Pointer_Problem.TwoSumSortedArray();
             Dictionary<int, int> dictionaries1 = twoSum.FindIndicesAndElements(input.sortedFixedArray, input.sortedFixedArrayTwoNumberSum);
-            */
-
+            
             Find_All_Substrings.FindAllSubstringsWithGivenCharacters findAll = new Find_All_Substrings.FindAllSubstringsWithGivenCharacters();
             findAll.FindingThroughBruteSearch(input.randomString, input.randomSubString);
+            */
+
+            FizzBuzz fizzBuzz = new FizzBuzz();
+            Console.WriteLine(fizzBuzz.FizzBuzzFunction(15)); 
         }
     }
 }
