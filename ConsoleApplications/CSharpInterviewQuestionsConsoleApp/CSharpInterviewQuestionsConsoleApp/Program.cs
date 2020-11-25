@@ -93,10 +93,13 @@ namespace CSharpInterviewQuestionsConsoleApp
             
             Find_All_Substrings.FindAllSubstringsWithGivenCharacters findAll = new Find_All_Substrings.FindAllSubstringsWithGivenCharacters();
             findAll.FindingThroughBruteSearch(input.randomString, input.randomSubString);
-            */
 
             FizzBuzz fizzBuzz = new FizzBuzz();
             Console.WriteLine(fizzBuzz.FizzBuzzFunction(15)); 
+            */
+
+            ReverseOnlyAlphabet reverseOnlyAlphabet = new ReverseOnlyAlphabet();
+            Console.WriteLine(reverseOnlyAlphabet.ReverseAlphabet("sea!$hells3"));
         }
     }
 }
