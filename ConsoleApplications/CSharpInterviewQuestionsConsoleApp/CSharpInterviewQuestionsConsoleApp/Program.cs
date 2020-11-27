@@ -96,10 +96,15 @@ namespace CSharpInterviewQuestionsConsoleApp
 
             FizzBuzz fizzBuzz = new FizzBuzz();
             Console.WriteLine(fizzBuzz.FizzBuzzFunction(15)); 
-            */
-
+             
             ReverseOnlyAlphabet reverseOnlyAlphabet = new ReverseOnlyAlphabet();
             Console.WriteLine(reverseOnlyAlphabet.ReverseAlphabet("sea!$hells3"));
-        }
+            */
+
+            Anagram anagram = new Anagram();
+            Console.WriteLine("Is cinema and iceman anagram: " + anagram.IsAnagram("cinema", "iceman"));
+            Console.WriteLine("Is cinema and anemic anagram: " + anagram.IsAnagram("cinema", "anemic"));
+            Console.WriteLine("Is cinema and micael anagram: " + anagram.IsAnagram("cinema", "micael"));
+        }  
     }
 }
