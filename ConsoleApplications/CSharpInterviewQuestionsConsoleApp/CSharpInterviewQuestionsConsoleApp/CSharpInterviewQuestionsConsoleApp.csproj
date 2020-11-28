@@ -54,6 +54,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Recursion_Concept\Factorial.cs" />
     <Compile Include="Recursion_Concept\FindAllFilesInFolderAndSubFolder.cs" />
+    <Compile Include="Reverse_String_Concept\Pallindrome.cs" />
     <Compile Include="Reverse_String_Concept\ReverseEveryWordInString.cs" />
     <Compile Include="Find_All_Substrings\FindAllSubstringsWithGivenCharacters.cs" />
     <Compile Include="Reverse_String_Concept\ReverseOnlyAlphabet.cs" />

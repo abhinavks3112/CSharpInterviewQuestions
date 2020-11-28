@@ -24,8 +24,6 @@ namespace CSharpInterviewQuestionsConsoleApp
 
         private bool InefficientMethod(string str1, string str2)
         {
-            bool allPresent = true;
-
             // If both are anagram of each other, then first their length should be equal
             if (str1.Length != str2.Length)
                 return false;

@@ -81,7 +81,7 @@ namespace CSharpInterviewQuestionsConsoleApp.Reverse_String_Concept
             return new String(letterInWordsReverse);
         }
 
-        public string RevereseSingleWordUsingTwoPointer(string word)
+        public string ReverseSingleWordUsingTwoPointer(string word)
         {
             char[] letterInWords = word.ToCharArray();
 
