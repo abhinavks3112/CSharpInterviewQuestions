@@ -105,15 +105,19 @@ namespace CSharpInterviewQuestionsConsoleApp
             Console.WriteLine("Is cinema and anemic anagram: " + anagram.IsAnagram("cinema", "anemic"));
             Console.WriteLine("Is cinema and micael anagram: " + anagram.IsAnagram("cinema", "micael"));
 
-            */
-
             Pallindrome pallindrome = new Pallindrome();
             Console.WriteLine("Is thisisnotapallindrome a pallindrome: " + pallindrome.IsPallindrome("thisisnotapallindrome"));
             Console.WriteLine("Is 'a' a pallindrome: " + pallindrome.IsPallindrome("a"));
             Console.WriteLine("Is racecar a pallindrome: " + pallindrome.IsPallindrome("racecar"));
             Console.WriteLine("Is rac1*e*1car a pallindrome: " + pallindrome.IsPallindrome("rac1*e*1car"));
             Console.WriteLine("Is rac12&~@^*e*21car a pallindrome(without the non-alphanumeric characters): " + pallindrome.IsPallindrome("rac12&~@^*e*21car", true));
-            Console.WriteLine("Is 'A Santa Lived As a Devil At NASA' a pallindrome: " + pallindrome.IsPallindrome("A Santa Lived As a Devil At NASA")); 
+            Console.WriteLine("Is 'A Santa Lived As a Devil At NASA' a pallindrome: " + pallindrome.IsPallindrome("A Santa Lived As a Devil At NASA"));
+            
+             */
+
+            Arrays_Concept.Majority_Element majority = new Arrays_Concept.Majority_Element();
+            Console.WriteLine(majority.FindMajorityElement(new int[] { 3, 3, 4, 2, 4, 4, 2, 4, 4 })); // 4 is the majority element
+            Console.WriteLine(majority.FindMajorityElement(new int[]  { 3, 3, 4, 2, 4, 4, 2, 4 } )); // No majority element
         }
     }
 }

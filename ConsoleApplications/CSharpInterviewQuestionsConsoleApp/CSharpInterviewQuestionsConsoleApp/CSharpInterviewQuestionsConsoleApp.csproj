@@ -47,6 +47,7 @@
     <Compile Include="Abstract_Class_Concept\ContractEmployee.cs" />
     <Compile Include="Abstract_Class_Concept\FullTimeEmployee.cs" />
     <Compile Include="Anagram.cs" />
+    <Compile Include="Arrays_Concept\Majority_Element.cs" />
     <Compile Include="FizzBuzz.cs" />
     <Compile Include="InputData\Input.cs" />
     <Compile Include="JaggedArray.cs" />
