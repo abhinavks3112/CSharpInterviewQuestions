@@ -113,11 +113,17 @@ namespace CSharpInterviewQuestionsConsoleApp
             Console.WriteLine("Is rac12&~@^*e*21car a pallindrome(without the non-alphanumeric characters): " + pallindrome.IsPallindrome("rac12&~@^*e*21car", true));
             Console.WriteLine("Is 'A Santa Lived As a Devil At NASA' a pallindrome: " + pallindrome.IsPallindrome("A Santa Lived As a Devil At NASA"));
             
-             */
-
             Arrays_Concept.Majority_Element majority = new Arrays_Concept.Majority_Element();
             Console.WriteLine(majority.FindMajorityElement(new int[] { 3, 3, 4, 2, 4, 4, 2, 4, 4 })); // 4 is the majority element
             Console.WriteLine(majority.FindMajorityElement(new int[]  { 3, 3, 4, 2, 4, 4, 2, 4 } )); // No majority element
+            
+            */
+
+            PowerOfThree powerOfThree = new PowerOfThree();
+            Console.WriteLine("Is 3 a power of 3: " + powerOfThree.FindIfNumberIsPowerOfThree(3));
+            Console.WriteLine("Is 6 a power of 3: " + powerOfThree.FindIfNumberIsPowerOfThree(6));
+            Console.WriteLine("Is 27 a power of 3: " + powerOfThree.FindIfNumberIsPowerOfThree(27));
+            Console.WriteLine("Is 7 a power of 3: " + powerOfThree.FindIfNumberIsPowerOfThree(7));
         }
     }
 }
