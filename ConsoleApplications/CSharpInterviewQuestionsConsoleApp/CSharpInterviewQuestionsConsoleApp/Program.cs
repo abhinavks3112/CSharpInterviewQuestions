@@ -114,16 +114,21 @@ namespace CSharpInterviewQuestionsConsoleApp
             Console.WriteLine("Is 'A Santa Lived As a Devil At NASA' a pallindrome: " + pallindrome.IsPallindrome("A Santa Lived As a Devil At NASA"));
             
             Arrays_Concept.Majority_Element majority = new Arrays_Concept.Majority_Element();
-            Console.WriteLine(majority.FindMajorityElement(new int[] { 3, 3, 4, 2, 4, 4, 2, 4, 4 })); // 4 is the majority element
-            Console.WriteLine(majority.FindMajorityElement(new int[]  { 3, 3, 4, 2, 4, 4, 2, 4 } )); // No majority element
+            Console.WriteLine("Majority Element in [3, 3, 4, 2, 4, 4, 2, 4, 4] is: " + majority.FindMajorityElement(new int[] { 3, 3, 4, 2, 4, 4, 2, 4, 4 })); // 4 is the majority element
+            Console.WriteLine("Majority Element in [3, 3, 4, 2, 4, 4, 2, 4] is: " + majority.FindMajorityElement(new int[]  { 3, 3, 4, 2, 4, 4, 2, 4 } )); // No majority element
             
-            */
-
             PowerOfThree powerOfThree = new PowerOfThree();
             Console.WriteLine("Is 3 a power of 3: " + powerOfThree.FindIfNumberIsPowerOfThree(3));
             Console.WriteLine("Is 6 a power of 3: " + powerOfThree.FindIfNumberIsPowerOfThree(6));
             Console.WriteLine("Is 27 a power of 3: " + powerOfThree.FindIfNumberIsPowerOfThree(27));
             Console.WriteLine("Is 7 a power of 3: " + powerOfThree.FindIfNumberIsPowerOfThree(7));
+
+            */
+            
+            Arrays_Concept.Single_Lonely_Number lonely_Number = new Arrays_Concept.Single_Lonely_Number();
+            Console.WriteLine("Lonely number in [ 4, 4, 6, 1, 3, 1, 3 ] is: " + lonely_Number.Find(new int[] { 4, 4, 6, 1, 3, 1, 3 })); // 6 
+            Console.WriteLine("Lonely number in [ 3, 3, 9 ] is: " + lonely_Number.Find(new int[] { 3, 3, 9 })); // 9
+
         }
     }
 }
