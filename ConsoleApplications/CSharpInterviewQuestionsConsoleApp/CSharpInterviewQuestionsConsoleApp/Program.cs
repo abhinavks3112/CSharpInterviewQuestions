@@ -123,11 +123,15 @@ namespace CSharpInterviewQuestionsConsoleApp
             Console.WriteLine("Is 27 a power of 3: " + powerOfThree.FindIfNumberIsPowerOfThree(27));
             Console.WriteLine("Is 7 a power of 3: " + powerOfThree.FindIfNumberIsPowerOfThree(7));
 
-            */
-            
             Arrays_Concept.Single_Lonely_Number lonely_Number = new Arrays_Concept.Single_Lonely_Number();
             Console.WriteLine("Lonely number in [ 4, 4, 6, 1, 3, 1, 3 ] is: " + lonely_Number.Find(new int[] { 4, 4, 6, 1, 3, 1, 3 })); // 6 
             Console.WriteLine("Lonely number in [ 3, 3, 9 ] is: " + lonely_Number.Find(new int[] { 3, 3, 9 })); // 9
+
+            */
+
+            SumDigitsUntilOne untilOne = new SumDigitsUntilOne();
+            Console.WriteLine("Single digit from sum of digits of number 49 recursively is:  " + untilOne.FindSingleDigit(49));
+            Console.WriteLine("Single digit from sum of digits of number 50 recursively is:  " + untilOne.FindSingleDigit(50));
 
         }
     }
