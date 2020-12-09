@@ -62,6 +62,7 @@
     <Compile Include="Find_All_Substrings\FindAllSubstringsWithGivenCharacters.cs" />
     <Compile Include="Reverse_String_Concept\ReverseOnlyAlphabet.cs" />
     <Compile Include="StoringDifferentDataTypesInArray.cs" />
+    <Compile Include="String_Concepts\DetectSubstring.cs" />
     <Compile Include="SumDigitsUntilOne.cs" />
     <Compile Include="Two_Pointer_Problem\TwoSum.cs" />
     <Compile Include="Two_Pointer_Problem\TwoSumSortedArray.cs" />
