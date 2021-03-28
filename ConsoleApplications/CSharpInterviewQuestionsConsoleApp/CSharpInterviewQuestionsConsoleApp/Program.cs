@@ -131,9 +131,7 @@ namespace CSharpInterviewQuestionsConsoleApp
             Console.WriteLine("Single digit from sum of digits of number 49 recursively is:  " + untilOne.FindSingleDigit(49));
             Console.WriteLine("Single digit from sum of digits of number 50 recursively is:  " + untilOne.FindSingleDigit(50));
 
-            */
-
-            String_Concepts.DetectSubstring detectSubstring = new String_Concepts.DetectSubstring();
+             String_Concepts.DetectSubstring detectSubstring = new String_Concepts.DetectSubstring();
             Console.WriteLine("The index at which substring 'flew' is present in string 'thepigflewwow' is: " + detectSubstring.Detect("thepigflewwow", "flew"));
             Console.WriteLine("The index at which substring 'graph' is present in string 'ggraph' is: " + detectSubstring.Detect("ggraph", "graph"));
             Console.WriteLine("The index at which substring 'two' is present in string 'twocanplay' is: " + detectSubstring.Detect("twocanplay", "two"));
@@ -142,7 +140,80 @@ namespace CSharpInterviewQuestionsConsoleApp
             Console.WriteLine("The index at which substring 'cat' is present in string 'home is home' is: " + detectSubstring.Detect("home is home", "cat"));
             Console.WriteLine("The index at which substring 'cat' is present in string 'home is where your cat is': " + detectSubstring.Detect("home is where your cat is", "cat"));
             Console.WriteLine("The index at which substring 'cat' is present in string 'home is where your not where your cap is but where your cat is': " + detectSubstring.Detect("home is where your not where your cap is but where your cat is", "cat"));
-            
+             
+            */
+
+            // Single Linked List
+            Data_Structures.LinkedList testList = new Data_Structures.LinkedList();
+            testList.InsertFront(testList, 1);
+            testList.InsertAfter(testList.head, 2);
+            testList.InsertAfter(testList.head.next, 3);
+            testList.InsertEnd(testList, 4);
+            testList.PrintAllNodes(testList);
+
+            Console.WriteLine();
+
+            Data_Structures.LinkedList testList1 = new Data_Structures.LinkedList();
+            testList.InsertEnd(testList1, 1);
+            testList.InsertAfter(testList1.head, 2);
+            testList.InsertAfter(testList1.head.next, 3);
+            testList.InsertFront(testList1, 4);
+            testList.PrintAllNodes(testList1);
+
+            Console.WriteLine("\nReversing the List");
+
+            testList.ReverseLinkedList(testList1);
+            testList.PrintAllNodes(testList1);
+
+            Console.WriteLine("\nDeleting first node");
+            testList.DeleteNodeByKey(testList1, 3);
+            testList.PrintAllNodes(testList1);
+
+            Console.WriteLine("\nDeleting last node");
+            testList.DeleteNodeByKey(testList1, 4);
+            testList.PrintAllNodes(testList1);
+
+            Console.WriteLine("\nDeleting all nodes");
+            testList.DeleteNodeByKey(testList1, 2);
+            testList.DeleteNodeByKey(testList1, 1);
+            testList.PrintAllNodes(testList1);
+
+            Console.WriteLine();
+
+            // Double Linked List
+            Data_Structures.DoubleLinkedList testList3 = new Data_Structures.DoubleLinkedList();
+            testList3.InsertFront(testList3, 1);
+            testList3.InsertAfter(testList3.head, 2);
+            testList3.InsertAfter(testList3.head.next, 3);
+            testList3.InsertEnd(testList3, 4);
+            testList3.PrintAllNodes(testList3);
+
+            Console.WriteLine();
+
+            Data_Structures.DoubleLinkedList testList4 = new Data_Structures.DoubleLinkedList();
+            testList3.InsertEnd(testList4, 1);
+            testList3.InsertAfter(testList4.head, 2);
+            testList3.InsertAfter(testList4.head.next, 3);
+            testList3.InsertFront(testList4, 4);
+            testList3.PrintAllNodes(testList4);
+
+            Console.WriteLine();
+
+            testList3.ReverseLinkedList(testList4);
+            testList3.PrintAllNodes(testList4);
+
+            Console.WriteLine("\nDeleting first node");
+            testList3.DeleteNodeByKey(testList4, 3);
+            testList3.PrintAllNodes(testList4);
+
+            Console.WriteLine("\nDeleting last node");
+            testList3.DeleteNodeByKey(testList4, 4);
+            testList3.PrintAllNodes(testList4);
+
+            Console.WriteLine("\nDeleting all nodes");
+            testList3.DeleteNodeByKey(testList4, 2);
+            testList3.DeleteNodeByKey(testList4, 1);
+            testList3.PrintAllNodes(testList4);
         }
     }
 }

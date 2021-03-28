@@ -49,6 +49,7 @@
     <Compile Include="Anagram.cs" />
     <Compile Include="Arrays_Concept\Majority_Element.cs" />
     <Compile Include="Arrays_Concept\Single_Lonely_Number.cs" />
+    <Compile Include="Data_Structures\LinkedList.cs" />
     <Compile Include="FizzBuzz.cs" />
     <Compile Include="InputData\Input.cs" />
     <Compile Include="JaggedArray.cs" />
