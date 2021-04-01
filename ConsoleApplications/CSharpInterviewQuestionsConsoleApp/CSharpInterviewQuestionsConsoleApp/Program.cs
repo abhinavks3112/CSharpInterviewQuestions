@@ -141,9 +141,7 @@ namespace CSharpInterviewQuestionsConsoleApp
             Console.WriteLine("The index at which substring 'cat' is present in string 'home is where your cat is': " + detectSubstring.Detect("home is where your cat is", "cat"));
             Console.WriteLine("The index at which substring 'cat' is present in string 'home is where your not where your cap is but where your cat is': " + detectSubstring.Detect("home is where your not where your cap is but where your cat is", "cat"));
              
-            */
-
-            // Single Linked List
+             // Single Linked List
             Data_Structures.LinkedList testList = new Data_Structures.LinkedList();
             testList.InsertFront(testList, 1);
             testList.InsertAfter(testList.head, 2);
@@ -214,6 +212,31 @@ namespace CSharpInterviewQuestionsConsoleApp
             testList3.DeleteNodeByKey(testList4, 2);
             testList3.DeleteNodeByKey(testList4, 1);
             testList3.PrintAllNodes(testList4);
+             
+            */
+
+            Data_Structures.BinaryTree tree = new Data_Structures.BinaryTree();
+            tree.Iterative_Insert(tree, 4);
+            tree.Iterative_Insert(tree, 2);
+            tree.Iterative_Insert(tree, 5);
+            tree.Iterative_Insert(tree, 1);
+            tree.Iterative_Insert(tree, 3);
+            tree.Iterative_Insert(tree, 10);
+
+            tree.Iterative_DisplayInPreOrder(tree);
+            tree.Iterative_DisplayInPostOrder(tree);
+            tree.Iterative_DisplayInOrder(tree);
+
+            Console.WriteLine();
+
+            tree.Recursive_Insert(tree.root, 7);
+            tree.Recursive_Insert(tree.root, 15);
+            Console.WriteLine("\n****************Display in Pre Order*****************");
+            tree.Recursive_DisplayInPreOrder(tree.root);
+            Console.WriteLine("\n****************Display in Post Order*****************");
+            tree.Recursive_DisplayInPostOrder(tree.root);
+            Console.WriteLine("\n****************Display in InOrder*****************");
+            tree.Recursive_DisplayInOrder(tree.root);
         }
     }
 }

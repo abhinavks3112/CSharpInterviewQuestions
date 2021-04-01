@@ -29,6 +29,7 @@ namespace CSharpInterviewQuestionsConsoleApp.Data_Structures
             next = null;
         }
     }
+    
     class LinkedList
     {
         internal Node head;
