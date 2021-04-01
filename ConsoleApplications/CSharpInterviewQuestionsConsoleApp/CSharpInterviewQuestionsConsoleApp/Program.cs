@@ -213,8 +213,6 @@ namespace CSharpInterviewQuestionsConsoleApp
             testList3.DeleteNodeByKey(testList4, 1);
             testList3.PrintAllNodes(testList4);
              
-            */
-
             Data_Structures.BinaryTree tree = new Data_Structures.BinaryTree();
             tree.Iterative_Insert(tree, 4);
             tree.Iterative_Insert(tree, 2);
@@ -237,6 +235,13 @@ namespace CSharpInterviewQuestionsConsoleApp
             tree.Recursive_DisplayInPostOrder(tree.root);
             Console.WriteLine("\n****************Display in InOrder*****************");
             tree.Recursive_DisplayInOrder(tree.root);
+             
+            */
+
+            string[] arr = { "f$st", "st", "f$st$ts$" };
+            Arrays_Concept.DollarSignDeletion dollar = new Arrays_Concept.DollarSignDeletion();
+            Console.WriteLine(dollar.DeleteCharacterBeforeDollarSign("f$st$ts$"));
+            Console.WriteLine(dollar.IsDollarDeleteEqual(arr)); 
         }
     }
 }
