@@ -235,13 +235,31 @@ namespace CSharpInterviewQuestionsConsoleApp
             tree.Recursive_DisplayInPostOrder(tree.root);
             Console.WriteLine("\n****************Display in InOrder*****************");
             tree.Recursive_DisplayInOrder(tree.root);
-             
-            */
-
+            
+            // Dollar Sign Deletion
             string[] arr = { "f$st", "st", "f$st$ts$" };
             Arrays_Concept.DollarSignDeletion dollar = new Arrays_Concept.DollarSignDeletion();
             Console.WriteLine(dollar.DeleteCharacterBeforeDollarSign("f$st$ts$"));
-            Console.WriteLine(dollar.IsDollarDeleteEqual(arr)); 
+            Console.WriteLine(dollar.IsDollarDeleteEqual(arr));
+
+            */
+
+            // First non-repeating character
+            String_Concepts.FirstNonRepeatingCharacter first = new String_Concepts.FirstNonRepeatingCharacter();
+            string inputString = "asdfsdafdasfjdfsafnnunl";
+            Console.WriteLine("\nFind the first non-repeating character in string: " + inputString);
+            Console.WriteLine("\nOutput:");
+            Console.WriteLine(first.Find(inputString));
+
+            string inputString1 = "asdfsda1fdasfjd22fsafnnunl";
+            Console.WriteLine("\nFind the first non-repeating character in string: " + inputString1);
+            Console.WriteLine("\nOutput:");
+            Console.WriteLine(first.Find(inputString1));
+
+            string inputString2 = "aaddff4455";
+            Console.WriteLine("\nFind the first non-repeating character in string: " + inputString2);
+            Console.WriteLine("\nOutput:");
+            Console.WriteLine(first.Find(inputString2));
         }
     }
 }
