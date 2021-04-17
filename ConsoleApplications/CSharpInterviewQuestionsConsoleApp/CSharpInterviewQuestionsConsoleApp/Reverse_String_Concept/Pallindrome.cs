@@ -52,6 +52,21 @@ namespace CSharpInterviewQuestionsConsoleApp.Reverse_String_Concept
             return false;
         }
 
+        public bool IsPallindrome(int number)
+        {
+            int temp = number;
+            int remainder, reverseNumber = 0;
+            while (temp > 0)
+            {
+                remainder = temp % 10;
+                reverseNumber = remainder + (reverseNumber * 10);
+                temp /= 10;
+            }
+            if (reverseNumber == number)
+                return true;
+            else
+                return false;
+        }
         public string ReverseAlphaNumeric(string s)
         {
             char[] allChar = s.ToCharArray();

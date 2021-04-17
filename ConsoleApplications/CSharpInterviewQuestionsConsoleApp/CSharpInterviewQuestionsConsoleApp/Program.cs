@@ -131,8 +131,6 @@ namespace CSharpInterviewQuestionsConsoleApp
             Console.WriteLine("Single digit from sum of digits of number 49 recursively is:  " + untilOne.FindSingleDigit(49));
             Console.WriteLine("Single digit from sum of digits of number 50 recursively is:  " + untilOne.FindSingleDigit(50));
 
-            */
-
             String_Concepts.DetectSubstring detectSubstring = new String_Concepts.DetectSubstring();
             Console.WriteLine("The index at which substring 'flew' is present in string 'thepigflewwow' is: " + detectSubstring.Detect("thepigflewwow", "flew"));
             Console.WriteLine("The index at which substring 'graph' is present in string 'ggraph' is: " + detectSubstring.Detect("ggraph", "graph"));
@@ -143,6 +141,11 @@ namespace CSharpInterviewQuestionsConsoleApp
             Console.WriteLine("The index at which substring 'cat' is present in string 'home is where your cat is': " + detectSubstring.Detect("home is where your cat is", "cat"));
             Console.WriteLine("The index at which substring 'cat' is present in string 'home is where your not where your cap is but where your cat is': " + detectSubstring.Detect("home is where your not where your cap is but where your cat is", "cat"));
             
+            */
+
+            Pallindrome pallindrome = new Pallindrome();
+            Console.WriteLine("Is 1212 a pallindrome: " + pallindrome.IsPallindrome(1212));
+            Console.WriteLine("Is 1221 a pallindrome: " + pallindrome.IsPallindrome(1221));
         }
     }
 }
